@@ -35,7 +35,6 @@
 .content {
   position: relative;
   margin: 0 1.5rem;
-  max-width: var(--width-medium);
 
   @nest & figcaption {
     width: 100%;
