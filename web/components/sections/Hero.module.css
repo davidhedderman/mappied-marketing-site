@@ -26,7 +26,6 @@
   font-size: var(--font-title2-size);
   line-height: var(--font-title2-line-height);
   margin: 0;
-  padding: 0;
   text-align: center;
   @media (--media-min-medium) {
     font-size: var(--font-title1-size);

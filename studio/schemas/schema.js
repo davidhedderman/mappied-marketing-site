@@ -24,6 +24,7 @@ import imageSection from './objects/imageSection'
 import mailchimp from './objects/mailchimp'
 import textSection from './objects/textSection'
 
+import feature from './objects/feature'
 import testimonial from './objects/testimonial'
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -46,6 +47,7 @@ export default createSchema({
     simplePortableText,
     siteConfig,
     textSection,
-    testimonial
+    testimonial,
+    feature
   ]),
 });
