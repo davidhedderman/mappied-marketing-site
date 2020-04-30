@@ -7,7 +7,10 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // Document types
 import page from './documents/page'
 import route from './documents/route'
+import eventInformation from './documents/eventInformation'
+import plan from './documents/plan'
 import siteConfig from './documents/siteConfig'
+import session from './documents/session'
 
 // Object types
 import cta from './objects/cta'
@@ -21,8 +24,10 @@ import simplePortableText from './objects/simplePortableText'
 // Landing page sections
 import hero from './objects/hero'
 import imageSection from './objects/imageSection'
+import mainImage from './objects/mainImage'
 import mailchimp from './objects/mailchimp'
 import textSection from './objects/textSection'
+import venue from './objects/venue'
 
 import feature from './objects/feature'
 import testimonial from './objects/testimonial'
@@ -37,7 +42,11 @@ export default createSchema({
     embedHTML,
     figure,
     hero,
+    plan,
+    session,
     imageSection,
+    mainImage,
+    venue,
     internalLink,
     link,
     mailchimp,
@@ -48,6 +57,7 @@ export default createSchema({
     siteConfig,
     textSection,
     testimonial,
-    feature
-  ]),
-});
+    feature,
+    eventInformation
+  ])
+})

@@ -25,6 +25,10 @@ export default {
         { type: 'textSection' },
         { type: 'testimonial' },
         { type: 'feature' },
+        {
+          type: 'reference',
+          to: [{ type: 'plan' }]
+        }
       ],
     },
     {
