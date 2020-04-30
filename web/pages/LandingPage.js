@@ -21,6 +21,10 @@ const pageQuery = groq`
       ctas[] {
         ...,
         route->
+      },
+      plan[] {
+        ...,
+        route->
       }
     }
   }
@@ -49,6 +53,7 @@ class LandingPage extends Component {
       return client.fetch(pageQuery, {slug}).then(res => ({...res.page, slug}))
     }
 
+asdajsdgaskjdh
     // Frontpage
     if (slug && slug === '/') {
       return client
@@ -66,8 +71,12 @@ class LandingPage extends Component {
               ctas[] {
                 ...,
                 route->
+              },
+              plan[] {
+                ...,
+                route->
               }
-            }
+            },
           }
         }
       `
