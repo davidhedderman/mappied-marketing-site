@@ -25,11 +25,19 @@ export default {
         { type: 'textSection' },
         { type: 'testimonial' },
         { type: 'feature' },
+      ],
+    },
+    {
+      name: 'plan',
+      type: 'array',
+      description: 'Publish one or more persons and set a reference to them here.',
+      title: 'Plan',
+      of: [
         {
           type: 'reference',
           to: [{ type: 'plan' }]
         }
-      ],
+      ]
     },
     {
       name: 'description',
